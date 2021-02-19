@@ -13,5 +13,4 @@
 
 ## Preview images
 
-![Alt text](https://imgur.com/undefined "ddsdsa")
-
+[Imgur](https://imgur.com/gtckBFv)
