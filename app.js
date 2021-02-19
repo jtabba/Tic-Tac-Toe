@@ -53,14 +53,6 @@ function changeColor(event) {
            allBoxes[0].style.backgroundColor = 'greenyellow';
            allBoxes[1].style.backgroundColor = 'greenyellow';
            allBoxes[2].style.backgroundColor = 'greenyellow';
-
-           if (
-            (allBoxes[i].style.backgroundColor === 'greenyellow') 
-            && 
-            (player === 1)) {
-                document.querySelector('.score').textContent = 'Noughts win!';
-                document.querySelector('.score').style.color = 'cyan';
-                player -= 10;
         } return
     } else if (
         ((allBoxes[3].style.backgroundColor === 'red') || (allBoxes[3].style.backgroundColor === 'cyan'))
@@ -149,7 +141,7 @@ function changeColor(event) {
     }
 
     // controlling the end game in event of win condition + alerting winner
-    console.log('test')
+    
     for (let i = 0; i < allBoxes.length; i++) {
 
         if (
@@ -189,6 +181,7 @@ function changeColor(event) {
             && 
             (player >= 1)
             ){
+
                 document.querySelector('.score').textContent = 'Draw!';
                 allBoxes[0].style.backgroundColor = 'blue';
                 allBoxes[1].style.backgroundColor = 'blue';
