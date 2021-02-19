@@ -1,15 +1,14 @@
 
 var allBoxes = document.querySelectorAll('.box');
-var darkBtn = document.querySelector('.dark-btn');
 var resetBtn = document.querySelector('.reset-btn');
-var player0 = 1;
+var player = 1;
 
 function resetGame() {
     for (r = 0; r < allBoxes.length; r++) {
         allBoxes[r].style.backgroundColor = '';
         allBoxes[r].style.fontSize = '120px';
         allBoxes[r].textContent = '';
-        player0 = 1;
+        player = 1;
     }
 }
 
@@ -23,26 +22,23 @@ function changeColor(event) {
         ||
         (event.target.style.backgroundColor === 'greenyellow')
         ) {
-        player0 += 0; 
-        console.log(player0)
-    } else if (player0 === 1) {
+        player += 0; 
+    } else if (player === 1) {
         event.target.style.backgroundColor = 'red';
         event.target.textContent = 'X';
         event.target.style.fontFamily = 'Lexend Mega, sans-serif';
         event.target.style.fontSize = '120px';
         event.target.style.fontWeight = 'bold';
         event.target.style.textAlign = 'center';
-        player0 += 1;
-        console.log(player0)
-    } else if (player0 === 2) {
+        player += 1;
+    } else if (player === 2) {
         event.target.style.backgroundColor = 'cyan';
         event.target.textContent = 'O';
         event.target.style.fontFamily = 'Lexend Mega, sans-serif';
         event.target.style.fontSize = '120px';
         event.target.style.fontWeight = 'bold';
         event.target.style.textAlign = 'center';
-        player0 -= 1;
-        console.log(player0)
+        player -= 1;
     }
 
     // controlling win conditions
@@ -148,54 +144,55 @@ function changeColor(event) {
     for (let i = 0; i < allBoxes.length; i++) {
 
         if (
-            (allBoxes[0].style.backgroundColor !== '') 
+            (allBoxes[0].textContent !== '') 
             &&
-            (allBoxes[1].style.backgroundColor !== '') 
+            (allBoxes[1].textContent !== '') 
             &&
-            (allBoxes[2].style.backgroundColor !== '') 
+            (allBoxes[2].textContent !== '') 
             &&
-            (allBoxes[3].style.backgroundColor !== '') 
+            (allBoxes[3].textContent !== '') 
             &&
-            (allBoxes[4].style.backgroundColor !== '') 
+            (allBoxes[4].textContent !== '') 
             &&
-            (allBoxes[5].style.backgroundColor !== '') 
+            (allBoxes[5].textContent !== '') 
             &&
-            (allBoxes[6].style.backgroundColor !== '') 
+            (allBoxes[6].textContent !== '') 
             &&
-            (allBoxes[7].style.backgroundColor !== '') 
+            (allBoxes[7].textContent !== '') 
             &&
-            (allBoxes[8].style.backgroundColor !== '') 
+            (allBoxes[8].textContent !== '') 
             && 
-            (player0 >= 1)
+            (player >= 1)
             ){
-                player0 -= 10;
-                allBoxes[0].style.backgroundColor = 'blue'
-                allBoxes[1].style.backgroundColor = 'blue'
-                allBoxes[2].style.backgroundColor = 'blue'
-                allBoxes[3].style.backgroundColor = 'blue'
-                allBoxes[4].style.backgroundColor = 'blue'
-                allBoxes[5].style.backgroundColor = 'blue'
-                allBoxes[6].style.backgroundColor = 'blue'
-                allBoxes[7].style.backgroundColor = 'blue'
-                allBoxes[8].style.backgroundColor = 'blue'
+                
                 document.querySelector('.score').textContent = 'Draw!';
+                allBoxes[0].style.backgroundColor = 'blue';
+                allBoxes[1].style.backgroundColor = 'blue';
+                allBoxes[2].style.backgroundColor = 'blue';
+                allBoxes[3].style.backgroundColor = 'blue';
+                allBoxes[4].style.backgroundColor = 'blue';
+                allBoxes[5].style.backgroundColor = 'blue';
+                allBoxes[6].style.backgroundColor = 'blue';
+                allBoxes[7].style.backgroundColor = 'blue';
+                allBoxes[8].style.backgroundColor = 'blue';
+                player -= 10;
                 return;
              
         } else if (
             (allBoxes[i].style.backgroundColor === 'greenyellow') 
             && 
-            (player0 === 1)) {
+            (player === 1)) {
                 document.querySelector('.score').textContent = 'Noughts win!';
                 document.querySelector('.score').style.color = 'cyan';
-                player0 -= 10;
+                player -= 10;
                 return
         } else if (
             (allBoxes[i].style.backgroundColor === 'greenyellow') 
             && 
-            (player0 === 2)) {
+            (player === 2)) {
                 document.querySelector('.score').textContent = 'Crosses win!'
                 document.querySelector('.score').style.color = 'red'
-                player0 -= 10;
+                player -= 10;
                 return; 
         }
     }
