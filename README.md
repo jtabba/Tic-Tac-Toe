@@ -13,4 +13,4 @@
 
 ## Preview images
 
-[Imgur](https://imgur.com/gtckBFv)
+![Alt text](https://imgur.com/gtckBFv "Optional title")
