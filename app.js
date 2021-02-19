@@ -169,7 +169,7 @@ function changeColor(event) {
             // document.querySelector('.winner').style.color = 'blue';
             dScore = document.querySelector('.d-score').textContent;
             result = Number(dScore) + 1;
-            document.querySelector('.draw').style.color = 'white';
+            document.querySelector('.draw').style.color = 'blue';
             document.querySelector('.d-score').textContent = result;
 
             allBoxes[0].style.backgroundColor = 'blue';
