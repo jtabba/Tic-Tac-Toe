@@ -8,6 +8,9 @@ function resetGame() {
         allBoxes[r].style.backgroundColor = '';
         allBoxes[r].style.fontSize = '120px';
         allBoxes[r].textContent = '';
+        document.querySelector('.noughts').style.color = 'white';
+        document.querySelector('.crosses').style.color = 'white';
+        document.querySelector('.draw').style.color = 'white';
         player = 1;
     }
 }
@@ -162,8 +165,13 @@ function changeColor(event) {
         && 
         (player >= 1)
         ){
-            document.querySelector('.score').textContent = 'Draw!';
-            document.querySelector('.score').style.color = 'blue';
+            // document.querySelector('.winner').textContent = 'Draw!';
+            // document.querySelector('.winner').style.color = 'blue';
+            dScore = document.querySelector('.d-score').textContent;
+            result = Number(dScore) + 1;
+            document.querySelector('.draw').style.color = 'white';
+            document.querySelector('.d-score').textContent = result;
+
             allBoxes[0].style.backgroundColor = 'blue';
             allBoxes[1].style.backgroundColor = 'blue';
             allBoxes[2].style.backgroundColor = 'blue';
@@ -186,16 +194,24 @@ function announceWinner() {
             (allBoxes[i].style.backgroundColor === 'greenyellow') 
             && 
             (player === 1)) {
-                document.querySelector('.score').textContent = 'Noughts win!';
-                document.querySelector('.score').style.color = 'cyan';
+                // document.querySelector('.winner').textContent = 'Noughts win!';
+                // document.querySelector('.winner').style.color = 'cyan';
+                oScore = document.querySelector('.o-score').textContent;
+                result = Number(oScore) + 1;
+                document.querySelector('.noughts').style.color = 'cyan';
+                document.querySelector('.o-score').textContent = result;
                 player -= 2;
                 return;
         } else if (
             (allBoxes[i].style.backgroundColor === 'greenyellow') 
             && 
             (player === 2)) {
-                document.querySelector('.score').textContent = 'Crosses win!'
-                document.querySelector('.score').style.color = 'red'
+                // document.querySelector('.winner').textContent = 'Crosses win!'
+                // document.querySelector('.winner').style.color = 'red'
+                xScore = document.querySelector('.x-score').textContent;
+                result = Number(xScore) + 1;
+                document.querySelector('.crosses').style.color = 'red';
+                document.querySelector('.x-score').textContent = result;
                 player -= 2;
                 return; 
         }

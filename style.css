@@ -26,15 +26,17 @@ h1 {
     font-size: 45px;
     color: white;
     margin-left: 95px;
+    margin-bottom: -15px;
 }
 
-.score {
-    font-size: 25px;
+.winner {
+    font-size: 20px;
     font-family: 'Lexend Mega', sans-serif;
     margin: 15px 0 15px 0;
     padding: 15px 0 15px 0;
     color: black;
     min-height: 60px;
+    margin-bottom: -5px;
 }
 
 main {
@@ -57,6 +59,18 @@ main {
     box-shadow: inset 0 0 25px white;
 }
 
+.scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-top: -20px;
+    font-size: 18px;
+}
+
 .reset-btn {
     display: grid;
     justify-content: center;
@@ -64,11 +78,12 @@ main {
     max-width: 100px;
     align-self: flex-start;
     color: white;
+    margin-top: 25px;
     font-size: 20px;
     font-family: 'Lexend Mega', sans-serif;
     padding: 10px;
     border: 2px solid white;
-    margin-left: 173px;
+    margin-left: 163px;
 }
 
 .reset-btn:hover {
@@ -76,8 +91,4 @@ main {
     border: 2px solid greenyellow;
     transition: ease-in 200ms, ease-out 200ms;
     border-radius: 20px;
-}
-
-.score {
-    color: white;
 }
