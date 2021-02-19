@@ -13,5 +13,5 @@
 
 ## Preview images
 
-![Alt text](desktop/xwin.jpg?raw=true "X win!")
+![Alt text](https://imgur.com/undefined "ddsdsa")
 
