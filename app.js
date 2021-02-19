@@ -53,7 +53,7 @@ function changeColor(event) {
            allBoxes[0].style.backgroundColor = 'greenyellow';
            allBoxes[1].style.backgroundColor = 'greenyellow';
            allBoxes[2].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[3].style.backgroundColor === 'red') || (allBoxes[3].style.backgroundColor === 'cyan'))
         &&
@@ -65,7 +65,7 @@ function changeColor(event) {
               allBoxes[3].style.backgroundColor = 'greenyellow';
               allBoxes[4].style.backgroundColor = 'greenyellow';
               allBoxes[5].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[6].style.backgroundColor === 'red') || (allBoxes[6].style.backgroundColor === 'cyan'))
         &&
@@ -77,7 +77,7 @@ function changeColor(event) {
               allBoxes[6].style.backgroundColor = 'greenyellow';
               allBoxes[7].style.backgroundColor = 'greenyellow';
               allBoxes[8].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[0].style.backgroundColor === 'red') || (allBoxes[0].style.backgroundColor === 'cyan'))
         &&
@@ -89,7 +89,7 @@ function changeColor(event) {
               allBoxes[0].style.backgroundColor = 'greenyellow';
               allBoxes[3].style.backgroundColor = 'greenyellow';
               allBoxes[6].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[1].style.backgroundColor === 'red') || (allBoxes[1].style.backgroundColor === 'cyan'))
         &&
@@ -101,7 +101,7 @@ function changeColor(event) {
               allBoxes[1].style.backgroundColor = 'greenyellow';
               allBoxes[4].style.backgroundColor = 'greenyellow';
               allBoxes[7].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[2].style.backgroundColor === 'red') || (allBoxes[2].style.backgroundColor === 'cyan'))
         &&
@@ -113,7 +113,7 @@ function changeColor(event) {
               allBoxes[2].style.backgroundColor = 'greenyellow';
               allBoxes[5].style.backgroundColor = 'greenyellow';
               allBoxes[8].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[0].style.backgroundColor === 'red') || (allBoxes[0].style.backgroundColor === 'cyan'))
         &&
@@ -125,7 +125,7 @@ function changeColor(event) {
               allBoxes[0].style.backgroundColor = 'greenyellow';
               allBoxes[4].style.backgroundColor = 'greenyellow';
               allBoxes[8].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     } else if (
         ((allBoxes[2].style.backgroundColor === 'red') || (allBoxes[2].style.backgroundColor === 'cyan'))
         &&
@@ -137,7 +137,7 @@ function changeColor(event) {
               allBoxes[2].style.backgroundColor = 'greenyellow';
               allBoxes[4].style.backgroundColor = 'greenyellow';
               allBoxes[6].style.backgroundColor = 'greenyellow';
-        } return announceWinner()
+        } return announceWinner();
     }
 
     // controlling draw condition
@@ -162,7 +162,6 @@ function changeColor(event) {
         && 
         (player >= 1)
         ){
-
             document.querySelector('.score').textContent = 'Draw!';
             document.querySelector('.score').style.color = 'blue';
             allBoxes[0].style.backgroundColor = 'blue';
@@ -176,7 +175,6 @@ function changeColor(event) {
             allBoxes[8].style.backgroundColor = 'blue';
             player -= 2;
             return;
-        
     }
 }
 
@@ -191,7 +189,7 @@ function announceWinner() {
                 document.querySelector('.score').textContent = 'Noughts win!';
                 document.querySelector('.score').style.color = 'cyan';
                 player -= 2;
-                return
+                return;
         } else if (
             (allBoxes[i].style.backgroundColor === 'greenyellow') 
             && 
