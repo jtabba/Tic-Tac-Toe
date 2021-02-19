@@ -20,3 +20,12 @@ Once a winner is decided, click reset and play again - your scores will be saved
 ## Preview images
 
 ![Alt text](https://imgur.com/gtckBFv "Optional title")
+
+## Ideas for future features
+
+   - Interactive sounds
+   - Computer player (easy)
+   - Computer player (hard)
+   - Online interactivity 
+   - Chat box for online games
+   - Customisation
