@@ -9,7 +9,13 @@
    - A reset function
    - Many transitions and colours to enhance the users experience
 
-3. Set up is easy- simply click this link: https://jtabba.github.io/Tic-Tac-Toe/. Once a winner is decided, click reset and play again!
+## View the current live version
+
+Set up is easy- simply click this link: 
+
+https://jtabba.github.io/Tic-Tac-Toe/. 
+
+Once a winner is decided, click reset and play again - your scores will be saved!
 
 ## Preview images
 
