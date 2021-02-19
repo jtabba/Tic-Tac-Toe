@@ -11,3 +11,7 @@
 
 3. Set up is easy- simply click this link: https://jtabba.github.io/Tic-Tac-Toe/. Once a winner is decided, click reset and play again!
 
+## Preview images
+
+![Alt text](/desktop/xwin.jpg?raw=true "X win!")
+
