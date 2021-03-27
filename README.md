@@ -37,13 +37,13 @@ Most importantly, I learnt that I thoroughly enjoy the critical thinking and pro
 
 The UI will display different coloured patterns across the game grid based upon the outcome of the round.
 
-Crosses win preview
-![Home interface](https://github.com/jtabba/Tic-Tac-Toe/blob/main/images/xwin.jpg | width=300)
+# Crosses win preview
+![Home interface](https://github.com/jtabba/Tic-Tac-Toe/blob/main/images/xwin.jpg)
 
-Noughts win preview
+# Noughts win preview
 ![Home interface](https://github.com/jtabba/Tic-Tac-Toe/blob/main/images/owin.jpg)
 
-Draw preview
+# Draw preview
 ![Home interface](https://github.com/jtabba/Tic-Tac-Toe/blob/main/images/draw.jpg)
 
 
