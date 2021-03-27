@@ -25,7 +25,7 @@ Overall, I am happy with the project. I was able to implement all the basic feat
 Most importantly, I learnt that I thoroughly enjoy the critical thinking and problem-solving steps required to program (basic) software. I had never invested so many consistent hours which I enjoyed into a task. It is safe to say that I am hooked and am very excited to progress through the course and find a position in the software development industry.
 
 
-# Features 
+## Features 
    - Visually indicating the winning combination 
    - Displaying the winning player 
    - Keeping track of scores
@@ -38,13 +38,13 @@ Most importantly, I learnt that I thoroughly enjoy the critical thinking and pro
 The UI will display different coloured patterns across the game grid based upon the outcome of the round.
 
 Crosses win preview
-![Home interface](https://raw.githubusercontent.com/jtabba/Tic-Tac-Toe/images/xwin.jpg)
+![Home interface](https://raw.githubusercontent.com/jtabba/Tic-Tac-Toe/blob/main/images/xwin.jpg)
 
 Noughts win preview
-![Home interface](https://raw.githubusercontent.com/jtabba/Tic-Tac-Toe/images/owin.jpg)
+![Home interface](https://raw.githubusercontent.com/jtabba/Tic-Tac-Toe/blob/images/owin.jpg)
 
 Draw preview
-![Home interface](https://raw.githubusercontent.com/jtabba/Tic-Tac-Toe/images/draw.jpg)
+![Home interface](https://github.com/jtabba/Tic-Tac-Toe/blob/main/images/draw.jpg)
 
 
 ## Ideas for future features
